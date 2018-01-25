@@ -7,6 +7,10 @@ Team Members: Isaiah Cruz, Justin Lee, ... (include first name and last name for
 Description:
 This assignment was a lesson in access modifiers and static variables.
 Team member roles in assignment: (Who did what)
+
+Justin: Did most of the code work and provided input about aspects of the code.
+Isaiah: Did a small amount of code and answered conclusions.
+
 Key Lessons learned:
 Summarize what you think important teaching points from the lesson were.  
 
