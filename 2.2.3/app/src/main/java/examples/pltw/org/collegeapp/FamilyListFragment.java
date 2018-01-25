@@ -2,7 +2,7 @@ package examples.pltw.org.collegeapp;
 
 import examples.pltw.org.collegeapp.Family;
 import android.os.Bundle;
-import android.support.v4.app.ListFragment;
+import android.support.v4.app.ListFragment; //step 18
 import examples.pltw.org.collegeapp.Family;
 import android.util.Log;
 import android.view.View;
@@ -17,21 +17,21 @@ import java.util.ArrayList;
  */
 
 public class FamilyListFragment extends ListFragment {
-    private static String TAG;
-    private Family mFamily;
-    public FamilyListFragment()
+    private static String TAG; //step 19
+    private Family mFamily; //step 20
+    public FamilyListFragment() //step 21
     {
         mFamily = Family.getFamily();
     }
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) { //step 23
         super.onCreate(savedInstanceState);
         getActivity().setTitle(R.string.family_members_title);
 
         FamilyMemberAdapter adapter = new FamilyMemberAdapter(mFamily.getFamily());
         setListAdapter(adapter);
     }
-    private class FamilyMemberAdapter extends ArrayAdapter<FamilyMember> {
+    private class FamilyMemberAdapter extends ArrayAdapter<FamilyMember> { //step 24
         public FamilyMemberAdapter(ArrayList<FamilyMember> family) {
             super(getActivity(), 0, family);
         }
