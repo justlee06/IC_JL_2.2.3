@@ -11,7 +11,7 @@ public abstract class FamilyMember extends ApplicantData {
         firstName = "Ada";
         lastName = "Lovelace";
     }
-    public FamilyMember(String firstName, String lastName)
+    public FamilyMember(String firstName, String lastName) //step 8
     {
         this.firstName = firstName;
         this.lastName = lastName;
