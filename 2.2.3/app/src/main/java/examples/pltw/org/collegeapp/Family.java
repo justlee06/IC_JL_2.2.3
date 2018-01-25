@@ -7,16 +7,16 @@ import android.util.Log;
  */
 
 public class Family {
-    private static String TAG;
-    private ArrayList<FamilyMember> family;
-    private static Family sFamily;
-    private Family()
+    private static String TAG; //step 3
+    private ArrayList<FamilyMember> family; //step 4
+    private static Family sFamily; //step 6
+    private Family() //step 7
     {
-        family = new ArrayList<FamilyMember>();
+        family = new ArrayList<FamilyMember>(); //step 10
         family.add(new Guardian("Justin", "Lee"));
         family.add(new Guardian());
     }
-    public static Family getFamily()
+    public static Family getFamily() //step 12
     {
         if(sFamily == null)
         {
